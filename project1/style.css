@@ -1,0 +1,240 @@
+html, body{
+    height:100%;
+    overflow: hidden;
+}
+
+#universe{
+    background: radial-gradient(#555,#000);
+}
+
+#stars{
+    height:100%;
+    background-image: url(./images/stars.png);
+    background-size: cover;
+    animation: starFlash 3s infinite alternate;
+}
+
+/* alternate為反向執行 */
+
+#sun{
+    width: 200px;
+    height: 200px;
+    /* background-color: orange; */
+    background: radial-gradient(#f5c313,#ec7e08);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 100px;
+    box-shadow: 0 0 45px #f5c91a;
+    animation: sunLight 5s infinite alternate;
+}
+
+@keyframes starFlash{
+    from{ opacity:1;}
+    to{opacity:0.3;}
+}
+
+@keyframes sunLight{
+    from{box-shadow:0 0 45px #f5c91a;}
+    to{box-shadow:0 0 90px #f5c91a;}
+}
+
+@keyframes spin{
+    from {transform:rotate(0)}
+    to {transform:rotate(360deg);}
+  
+}
+
+#earthOrbit {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 10s linear infinite;
+}
+
+#jupiterOrbit {
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -400px;
+    margin-left: -400px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 11s linear infinite;
+}
+
+#marsOrbit {
+    height: 940px;
+    width: 940px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -470px;
+    margin-left: -470px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 12s linear infinite;
+}
+
+#mercuryOrbit {
+    height: 1200px;
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -600px;
+    margin-left: -600px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 13s linear infinite;
+}
+
+/* 軌道設定 寬高和MT ML值為一半會變成繞著太陽的圓 */
+
+#neptuneOrbit {
+    height: 1400px;
+    width: 1400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -700px;
+    margin-left: -700px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 14s linear infinite;
+}
+
+#saturnOrbit {
+    height: 1600px;
+    width: 1600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -800px;
+    margin-left: -800px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 15s linear infinite;
+}
+
+#uranusOrbit {
+    height: 1800px;
+    width: 1800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -900px;
+    margin-left: -900px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 16s linear infinite;
+}
+
+#VenusOrbit {
+    height: 2000px;
+    width: 2000px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1000px;
+    margin-left: -1000px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 17s linear infinite;
+
+}
+
+#earth{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+    top:50%;
+    overflow: hidden;
+}
+
+#jupiter{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+    top:50%;
+    overflow: hidden;
+}
+
+#mars{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+    top:50%;
+    overflow: hidden;
+}
+
+#mercury{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+    top:50%;
+    overflow: hidden;
+}
+
+#neptune{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+    top:50%;
+    overflow: hidden;
+}
+
+#saturn{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+    top:50%;
+    overflow: hidden;
+}
+
+#uranus{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+    top:50%;
+    overflow: hidden;
+}
+
+#Venus{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+    top:50%;
+    overflow: hidden;
+}
+
+
+#moonOrbit{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 5s linear infinite;
+}
+
+#moon{
+    width: 36px;
+    height: 36px;
+    background: radial-gradient(#ddd,#888);
+    border-radius: 100%;
+    /* animation: spin 30s linear infinite; */
+}
